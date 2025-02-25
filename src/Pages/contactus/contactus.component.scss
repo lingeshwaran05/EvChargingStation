@@ -1,0 +1,51 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+.container {
+  @apply w-full flex flex-col justify-between p-10 items-center h-[90vh] bg-red-200;
+
+  .header {
+    @apply flex flex-col h-[10%] justify-between items-center;
+
+    h1 {
+      @apply text-2xl font-bold;
+    }
+  }
+
+  .content {
+    @apply flex h-[80%] w-[80%] bg-blue-500 justify-between items-center;
+
+    .left-section {
+      @apply w-1/2 p-10 h-full bg-green-500;
+
+      .top-image {
+        @apply w-full flex justify-start items-center h-1/2;
+
+        img {
+          @apply w-80;
+        }
+      }
+
+      .bottom-image {
+        @apply w-full flex justify-end items-center h-1/2;
+
+        img {
+          @apply w-80;
+        }
+      }
+    }
+
+    .right-section {
+      @apply w-1/2 h-full bg-orange-50 flex items-center;
+
+      .text-content {
+        @apply w-full flex flex-col justify-start;
+
+        h1 {
+          @apply text-4xl font-bold;
+        }
+      }
+    }
+  }
+}

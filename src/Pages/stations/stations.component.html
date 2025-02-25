@@ -1,0 +1,13 @@
+<app-header></app-header>
+<div class="flex flex-col justify-center items-center w-full h-full">
+    <h2>Charging stations near you</h2>
+    <div class="grid">
+      <div class="card" *ngFor="let station of chargingStations">
+        <h3>{{ station.name }}</h3>
+        <p>{{ station.address }}</p>
+        <button routerLink="/slot" class="view-more">View More &rsaquo;</button>
+      </div>
+    </div>
+  </div>
+
+  

@@ -1,0 +1,86 @@
+<app-header></app-header>
+<style>
+body {
+  font-family: sans-serif; /* Choose a clean font */
+  background-color: #f4f4f4; /* Light background color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+ 
+.signup-container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  width: 350px; /* Adjust width as needed */
+}
+ 
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333; /* Dark heading color */
+}
+ 
+.input-group {
+  margin-bottom: 15px;
+}
+ 
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #666; /* Slightly lighter label color */
+}
+ 
+input[type="text"],
+input[type="number"],
+input[type="password"] {
+  width: calc(100% - 12px); /* Account for padding and border */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+ 
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff; /* Blue button */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+ 
+button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+ 
+.error-message {
+  color: #dc3545; /* Red error message color */
+  margin-top: 5px;
+}
+img{
+    margin-left: 0;
+}
+</style>
+
+<section class="flex w-full h-[90vh] items-center justify-evenly ">
+    <img src="../../assets/home.jpg" alt="">
+    <div class="login-container">
+        <div class="login-box">
+          <h2>LOGIN</h2>
+          <form method="post">
+            <div class="input-group">
+              <label for="username">Username</label>
+              <input type="text" id="username" name="username">
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password">
+            </div>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+  </section>
